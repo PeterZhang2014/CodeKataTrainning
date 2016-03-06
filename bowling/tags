@@ -1,0 +1,162 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AR	Makefile	/^AR		= $(CROSS_COMPILE)ar$/;"	m
+AS	Makefile	/^AS		= $(CROSS_COMPILE)as$/;"	m
+CC	Makefile	/^CC		= $(CROSS_COMPILE)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS := -Wall -O2 -g$/;"	m
+CMOCKERY_H_	cmockery.h	17;"	d
+CPP	Makefile	/^CPP		= $(CC) -E$/;"	m
+CROSS_COMPILE	Makefile	/^CROSS_COMPILE =$/;"	m
+CheckParameterEvent	cmockery.h	/^typedef struct CheckParameterEvent {$/;"	s
+CheckParameterEvent	cmockery.h	/^} CheckParameterEvent;$/;"	t	typeref:struct:CheckParameterEvent
+CheckParameterEvent::check_value	cmockery.h	/^	CheckParameterValue check_value;$/;"	m	struct:CheckParameterEvent	access:public
+CheckParameterEvent::check_value_data	cmockery.h	/^	void *check_value_data;$/;"	m	struct:CheckParameterEvent	access:public
+CheckParameterEvent::location	cmockery.h	/^	SourceLocation location;$/;"	m	struct:CheckParameterEvent	access:public
+CheckParameterEvent::parameter_name	cmockery.h	/^	const char *parameter_name;$/;"	m	struct:CheckParameterEvent	access:public
+CheckParameterValue	cmockery.h	/^typedef int (*CheckParameterValue)(const void *value, void *check_value_data);$/;"	t
+FRAME_STATUS_NORMAL	bowling.h	/^	FRAME_STATUS_NORMAL = 0,$/;"	e	enum:e_frameStatus
+FRAME_STATUS_SPARE	bowling.h	/^	FRAME_STATUS_SPARE,  \/*补中*\/$/;"	e	enum:e_frameStatus
+FRAME_STATUS_STRIKE	bowling.h	/^	FRAME_STATUS_STRIKE, \/*全中*\/$/;"	e	enum:e_frameStatus
+LD	Makefile	/^LD		= $(CROSS_COMPILE)ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS := -lpthread .\/libcmockery.a$/;"	m
+NM	Makefile	/^NM		= $(CROSS_COMPILE)nm$/;"	m
+OBJCOPY	Makefile	/^OBJCOPY		= $(CROSS_COMPILE)objcopy$/;"	m
+OBJDUMP	Makefile	/^OBJDUMP		= $(CROSS_COMPILE)objdump$/;"	m
+SINGLE_GAME_MUX_FRAME_NUMBER	bowling.h	22;"	d
+STRIP	Makefile	/^STRIP		= $(CROSS_COMPILE)strip$/;"	m
+SourceLocation	cmockery.h	/^typedef struct SourceLocation {$/;"	s
+SourceLocation	cmockery.h	/^} SourceLocation;$/;"	t	typeref:struct:SourceLocation
+SourceLocation::file	cmockery.h	/^	const char* file;$/;"	m	struct:SourceLocation	access:public
+SourceLocation::line	cmockery.h	/^	int line;$/;"	m	struct:SourceLocation	access:public
+TARGET	Makefile	/^TARGET := cmockery_demo.out$/;"	m
+TOPDIR	Makefile	/^TOPDIR := $(shell pwd)$/;"	m
+UNIT_TEST_FUNCTION_TYPE_SETUP	cmockery.h	/^	UNIT_TEST_FUNCTION_TYPE_SETUP,$/;"	e	enum:UnitTestFunctionType
+UNIT_TEST_FUNCTION_TYPE_TEARDOWN	cmockery.h	/^	UNIT_TEST_FUNCTION_TYPE_TEARDOWN,$/;"	e	enum:UnitTestFunctionType
+UNIT_TEST_FUNCTION_TYPE_TEST	cmockery.h	/^	UNIT_TEST_FUNCTION_TYPE_TEST = 0,$/;"	e	enum:UnitTestFunctionType
+UnitTest	cmockery.h	/^typedef struct UnitTest {$/;"	s
+UnitTest	cmockery.h	/^} UnitTest;$/;"	t	typeref:struct:UnitTest
+UnitTest::function	cmockery.h	/^	UnitTestFunction function;$/;"	m	struct:UnitTest	access:public
+UnitTest::function_type	cmockery.h	/^	UnitTestFunctionType function_type;$/;"	m	struct:UnitTest	access:public
+UnitTest::name	cmockery.h	/^	const char* name;$/;"	m	struct:UnitTest	access:public
+UnitTestFunction	cmockery.h	/^typedef void (*UnitTestFunction)(void **state);$/;"	t
+UnitTestFunctionType	cmockery.h	/^typedef enum UnitTestFunctionType {$/;"	g
+UnitTestFunctionType	cmockery.h	/^} UnitTestFunctionType;$/;"	t	typeref:enum:UnitTestFunctionType
+__BOWLING_H__	bowling.h	20;"	d
+__func__	cmockery.h	32;"	d
+_assert_in_range	cmockery.h	/^void _assert_in_range(const int value, const int minimum, const int maximum,$/;"	p	signature:(const int value, const int minimum, const int maximum, const char* const file, const int line)
+_assert_in_set	cmockery.h	/^void _assert_in_set(const void * const value, const void *values[],$/;"	p	signature:(const void * const value, const void *values[], const size_t number_of_values, const char* const file, const int line)
+_assert_int_equal	cmockery.h	/^void _assert_int_equal(const int a, const int b, const char * const file, $/;"	p	signature:(const int a, const int b, const char * const file, const int line)
+_assert_int_not_equal	cmockery.h	/^void _assert_int_not_equal(const int a, const int b, const char * const file, $/;"	p	signature:(const int a, const int b, const char * const file, const int line)
+_assert_memory_equal	cmockery.h	/^void _assert_memory_equal(const void * const a, const void * const b, $/;"	p	signature:(const void * const a, const void * const b, const size_t size, const char* const file, const int line)
+_assert_memory_not_equal	cmockery.h	/^void _assert_memory_not_equal(const void * const a, const void * const b,$/;"	p	signature:(const void * const a, const void * const b, const size_t size, const char* const file, const int line)
+_assert_not_in_range	cmockery.h	/^void _assert_not_in_range(const int value, const int minimum,$/;"	p	signature:(const int value, const int minimum, const int maximum, const char* const file, const int line)
+_assert_not_in_set	cmockery.h	/^void _assert_not_in_set(const void * const value, const void *values[],$/;"	p	signature:(const void * const value, const void *values[], const size_t number_of_values, const char* const file, const int line)
+_assert_string_equal	cmockery.h	/^void _assert_string_equal(const char * const a, const char * const b, $/;"	p	signature:(const char * const a, const char * const b, const char * const file, const int line)
+_assert_string_not_equal	cmockery.h	/^void _assert_string_not_equal(const char * const a, const char * const b, $/;"	p	signature:(const char * const a, const char * const b, const char *file, const int line)
+_assert_true	cmockery.h	/^void _assert_true(const int result, const char* const expression, $/;"	p	signature:(const int result, const char* const expression, const char * const file, const int line)
+_check_expected	cmockery.h	/^void _check_expected($/;"	p	signature:( const char * const function_name, const char * const parameter_name, const char* file, const int line, const void* value)
+_expect_any	cmockery.h	/^void _expect_any($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const int count)
+_expect_check	cmockery.h	/^void _expect_check($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const CheckParameterValue check_function, void * const check_data, CheckParameterEvent * const event, const int count)
+_expect_in_range	cmockery.h	/^void _expect_in_range($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const int minimum, const int maximum, const int count)
+_expect_in_set	cmockery.h	/^void _expect_in_set($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const void *values[], const size_t number_of_values, const int count)
+_expect_memory	cmockery.h	/^void _expect_memory($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const void* const memory, const size_t size, const int count)
+_expect_not_in_range	cmockery.h	/^void _expect_not_in_range($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const int minimum, const int maximum, const int count)
+_expect_not_in_set	cmockery.h	/^void _expect_not_in_set($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const void *values[], const size_t number_of_values, const int count)
+_expect_not_memory	cmockery.h	/^void _expect_not_memory($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const void* const memory, const size_t size, const int count)
+_expect_not_string	cmockery.h	/^void _expect_not_string($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const char* string, const int count)
+_expect_not_value	cmockery.h	/^void _expect_not_value($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const void* const value, const int count)
+_expect_string	cmockery.h	/^void _expect_string($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const char* string, const int count)
+_expect_value	cmockery.h	/^void _expect_value($/;"	p	signature:( const char* const function, const char* const parameter, const char* const file, const int line, const void* const value, const int count)
+_fail	cmockery.h	/^void _fail(const char * const file, const int line);$/;"	p	signature:(const char * const file, const int line)
+_mock	cmockery.h	/^void* _mock(const char * const function, const char* const file, $/;"	p	signature:(const char * const function, const char* const file, const int line)
+_run_test	cmockery.h	/^int _run_test($/;"	p	signature:( const char * const function_name, const UnitTestFunction Function, void ** const state, const UnitTestFunctionType function_type, const void* const heap_check_point)
+_run_tests	cmockery.h	/^int _run_tests(const UnitTest * const tests, const size_t number_of_tests);$/;"	p	signature:(const UnitTest * const tests, const size_t number_of_tests)
+_test_calloc	cmockery.h	/^void* _test_calloc(const size_t number_of_elements, const size_t size, $/;"	p	signature:(const size_t number_of_elements, const size_t size, const char* file, const int line)
+_test_free	cmockery.h	/^void _test_free(void* const ptr, const char* file, const int line);$/;"	p	signature:(void* const ptr, const char* file, const int line)
+_test_malloc	cmockery.h	/^void* _test_malloc(const size_t size, const char* file, const int line);$/;"	p	signature:(const size_t size, const char* file, const int line)
+_will_return	cmockery.h	/^void _will_return(const char * const function_name, const char * const file,$/;"	p	signature:(const char * const function_name, const char * const file, const int line, const void* const value, const int count)
+assert_false	cmockery.h	156;"	d
+assert_in_range	cmockery.h	182;"	d
+assert_in_set	cmockery.h	191;"	d
+assert_int_equal	cmockery.h	159;"	d
+assert_int_not_equal	cmockery.h	161;"	d
+assert_memory_equal	cmockery.h	173;"	d
+assert_memory_not_equal	cmockery.h	177;"	d
+assert_not_in_range	cmockery.h	186;"	d
+assert_not_in_set	cmockery.h	194;"	d
+assert_string_equal	cmockery.h	165;"	d
+assert_string_not_equal	cmockery.h	168;"	d
+assert_true	cmockery.h	154;"	d
+calloc	cmockery.h	244;"	d
+check_expected	cmockery.h	150;"	d
+check_value	cmockery.h	/^	CheckParameterValue check_value;$/;"	m	struct:CheckParameterEvent	access:public
+check_value_data	cmockery.h	/^	void *check_value_data;$/;"	m	struct:CheckParameterEvent	access:public
+e_frameStatus	bowling.h	/^enum e_frameStatus {$/;"	g
+expect_any	cmockery.h	142;"	d
+expect_any_count	cmockery.h	144;"	d
+expect_assert_failure	cmockery.h	265;"	d
+expect_check	cmockery.h	52;"	d
+expect_in_range	cmockery.h	76;"	d
+expect_in_range_count	cmockery.h	78;"	d
+expect_in_set	cmockery.h	59;"	d
+expect_in_set_count	cmockery.h	61;"	d
+expect_memory	cmockery.h	126;"	d
+expect_memory_count	cmockery.h	128;"	d
+expect_not_in_range	cmockery.h	86;"	d
+expect_not_in_range_count	cmockery.h	88;"	d
+expect_not_in_set	cmockery.h	64;"	d
+expect_not_in_set_count	cmockery.h	66;"	d
+expect_not_memory	cmockery.h	131;"	d
+expect_not_memory_count	cmockery.h	133;"	d
+expect_not_string	cmockery.h	116;"	d
+expect_not_string_count	cmockery.h	118;"	d
+expect_not_value	cmockery.h	101;"	d
+expect_not_value_count	cmockery.h	103;"	d
+expect_string	cmockery.h	111;"	d
+expect_string_count	cmockery.h	113;"	d
+expect_value	cmockery.h	96;"	d
+expect_value_count	cmockery.h	98;"	d
+fail	cmockery.h	199;"	d
+file	cmockery.h	/^	const char* file;$/;"	m	struct:SourceLocation	access:public
+first_roll_number	bowling.h	/^	int first_roll_number;$/;"	m	struct:s_singleFrameInfo	access:public
+free	cmockery.h	245;"	d
+function	cmockery.h	/^	UnitTestFunction function;$/;"	m	struct:UnitTest	access:public
+function_type	cmockery.h	/^	UnitTestFunctionType function_type;$/;"	m	struct:UnitTest	access:public
+line	cmockery.h	/^	int line;$/;"	m	struct:SourceLocation	access:public
+location	cmockery.h	/^	SourceLocation location;$/;"	m	struct:CheckParameterEvent	access:public
+main	test_main.c	/^int main(int argc, const char *argv[])$/;"	f	signature:(int argc, const char *argv[])
+malloc	cmockery.h	243;"	d
+mock	cmockery.h	36;"	d
+mock_assert	cmockery.h	/^void mock_assert(const int result, const char* const expression, $/;"	p	signature:(const int result, const char* const expression, const char * const file, const int line)
+name	cmockery.h	/^	const char* name;$/;"	m	struct:UnitTest	access:public
+parameter_name	cmockery.h	/^	const char *parameter_name;$/;"	m	struct:CheckParameterEvent	access:public
+print_error	cmockery.h	/^void print_error(const char* const format, ...);$/;"	p	signature:(const char* const format, ...)
+print_message	cmockery.h	/^void print_message(const char* const format, ...);$/;"	p	signature:(const char* const format, ...)
+run_test	cmockery.h	202;"	d
+run_tests	cmockery.h	234;"	d
+s_singleFrameInfo	bowling.h	/^struct s_singleFrameInfo {$/;"	s
+s_singleFrameInfo::first_roll_number	bowling.h	/^	int first_roll_number;$/;"	m	struct:s_singleFrameInfo	access:public
+s_singleFrameInfo::second_roll_number	bowling.h	/^	int second_roll_number;$/;"	m	struct:s_singleFrameInfo	access:public
+second_roll_number	bowling.h	/^	int second_roll_number;$/;"	m	struct:s_singleFrameInfo	access:public
+single_frame_score	bowling.c	/^int single_frame_score(const unsigned int prev_frame_status, \\$/;"	f	signature:(const unsigned int prev_frame_status, \ const int first_roll_score, const int second_roll_score)
+single_frame_score	bowling.h	/^int single_frame_score(const unsigned int prev_frame_status, \\$/;"	p	signature:(const unsigned int prev_frame_status, \ const int first_roll_score, const int second_roll_score)
+single_game_score	bowling.c	/^int single_game_score(struct s_singleFrameInfo *frame_array)$/;"	f	signature:(struct s_singleFrameInfo *frame_array)
+single_roll_score	bowling.c	/^int single_roll_score(unsigned int number)$/;"	f	signature:(unsigned int number)
+single_roll_score	bowling.h	/^int single_roll_score(unsigned int number);$/;"	p	signature:(unsigned int number)
+test_calloc	cmockery.h	238;"	d
+test_free	cmockery.h	239;"	d
+test_malloc	cmockery.h	237;"	d
+test_single_frame_score	test_main.c	/^void test_single_frame_score(void **state)$/;"	f	signature:(void **state)
+test_single_roll_score	test_main.c	/^void test_single_roll_score(void **state)$/;"	f	signature:(void **state)
+unit_test	cmockery.h	205;"	d
+unit_test_setup	cmockery.h	206;"	d
+unit_test_setup_teardown	cmockery.h	214;"	d
+unit_test_teardown	cmockery.h	208;"	d
+vprint_error	cmockery.h	/^void vprint_error(const char* const format, va_list args);$/;"	p	signature:(const char* const format, va_list args)
+vprint_message	cmockery.h	/^void vprint_message(const char* const format, va_list args);$/;"	p	signature:(const char* const format, va_list args)
+will_return	cmockery.h	42;"	d
+will_return_count	cmockery.h	44;"	d
